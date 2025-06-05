@@ -20,8 +20,6 @@ namespace MasterThesis.Classes
         public double weightInTons = 10; // Default weight
         public double WeightInKgs { get; set; }
 
-        // API key: AIzaSyAwuu9tVf0C4n5NR_6zfYNyaiQHkSF-UzU
-
         public TransportEmissionCalculator(string pointA, string pointB, string transportMode, List<TimberElement> timberElements)
         {
             PointA = pointA;
@@ -66,7 +64,7 @@ namespace MasterThesis.Classes
 
         private async Task<double> GetDistanceFromGoogleMaps()
         {
-            string apiKey = "AIzaSyAwuu9tVf0C4n5NR_6zfYNyaiQHkSF-UzU";
+            string apiKey = " "; // If anyone reads this, this is where you insert you API-key
             string url = $"https://maps.googleapis.com/maps/api/distancematrix/json?origins={PointA}&destinations={PointB}&mode={TransportMode}&key={apiKey}";
 
             System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
