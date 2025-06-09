@@ -3,13 +3,18 @@ C# code used in Master Thesis: Circular Design with Reclaimed Wood: What’s Mis
 
 Used to create components in Grasshopper.
 
-Matching: DESCRIPTION
+### Matching   
+DESCRIPTION
 
-ParametricDesign: DESCRIPTION
+### ParametricDesign  
+DESCRIPTION
 
-DigitalMaterialBank: Consists of two folders and one file.
+### DigitalMaterialBank  
+  
+Consists of two folders and one file.  
+
 "BeamFromScan" contains the general code for creating "BeamFromPts" and "BeamFromMesh". To make the code less cluttered, additional files ("ConvexHullMethods", DelauneyMethods" and "GetCrossSection") have been created, containing the developed methods called upon in the general code. 
 
-"PackingAlgorithms" contains the general code for the different algorithms developed for packing (Packing, PackingOptimized and GridPacking). To make the code less cluttered, some methods have been developed in the file called "PackingMethods".
+"PackingAlgorithms" contains the general code for the different packing algorithms (Packing, PackingOptimized and GridPacking). To make the code less cluttered, some methods have been developed in the file called "PackingMethods".
 
-"Methods.cs" contains some general quality-of-life methods, not available in RhinoAPI, and were therefore created in a general file so they could be used when needed.
+"Methods.cs" contains some general quality-of-life methods, not available in RhinoAPI, and were therefore created in a separate file so they could be used when needed.
