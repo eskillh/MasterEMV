@@ -7,4 +7,9 @@ Matching: DESCRIPTION
 
 ParametricDesign: DESCRIPTION
 
-DigitalMaterialBank: The main components share the same name as in the master thesis, and contains the general part of the code. Some methods used are made in different files, these are the files labeled "methods", and are used to make the general code less cluttered.
+DigitalMaterialBank: Consists of two folders and one file.
+"BeamFromScan" contains the general code for creating "BeamFromPts" and "BeamFromMesh". To make the code less cluttered, additional files ("ConvexHullMethods", DelauneyMethods" and "GetCrossSection") have been created, containing the developed methods called upon in the general code. 
+
+"PackingAlgorithms" contains the general code for the different algorithms developed for packing (Packing, PackingOptimized and GridPacking). To make the code less cluttered, some methods have been developed in the file called "PackingMethods".
+
+"Methods.cs" contains some general quality-of-life methods, not available in RhinoAPI, and were therefore created in a general file so they could be used when needed.
